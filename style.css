@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+}
+
+.top-container {
+    background-image: url("https://images.unsplash.com/photo-1535957998253-26ae1ef29506?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=436&q=80");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.top-container h1 {
+    color: #f7f4f7;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+.text {
+    margin: 50px 5%;
+    font-family: sans-serif;
+}
+
+#center {
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    padding-left: 3rem; 
+    transition: background-color 0.4s;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: cursive;
+    font-size: 1.5rem;
+}
+
+.navbar ul li a:hover {
+    color: red;
+}
+
+.navbar.active {
+    background-color: black;
+}
+
+.navbar.active ul li a {
+    color: #fff;
+}
+
+.navbar .nav-header {
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+}
+
+.navbar.active .nav-header {
+    background-color: wheat;
+    border-radius: 15px;
+}
+
+.navbar .btn {
+    padding-right: 9rem;
+    font-size: .8rem;
+}
+
+.navbar .btn i {
+    padding: .2rem .2rem;
+    border-radius: 7px;
+}
+.navbar .btn i:hover {
+    color: #fff;
+    background-color: black;
+}
+
+.navbar.active .btn i {
+    color: #fff;
+}
+
+/*---------MEDIA---------*/
+@media (max-width: 690px) {
+    .navbar {
+        display: flex;
+        padding-left: 0; 
+    } 
+
+    ul a {
+        display: none;
+    }
+
+    .navbar .btn {
+        padding-right: 1rem;
+    }
+}
+
+
+@media (max-width: 460px) {
+
+    .navbar {
+        display: flex;
+        padding-left: 0; 
+    } 
+
+    ul a {
+        display: none;
+    }
+
+    .navbar .nav-header {
+        display: flex;
+        margin-left: .5rem;
+    }
+
+    .navbar.active .nav-header {
+        background-color: wheat;
+        border-radius: 15px;
+    }
+
+    .navbar .btn {
+        padding-right: 1rem;
+    }
+
+    .top-container h1 {
+        font-size: 2rem;
+        font-weight: normal;
+    }
+}
